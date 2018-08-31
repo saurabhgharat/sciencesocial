@@ -42,12 +42,18 @@
                       <li class="nav-item"><a  href="{% url 'groups:all' %}" class="btn btn-simple">Groups</a></li>
                       <li class="nav-item"><a  href="{% url 'groups:create' %}" class="btn btn-simple">Create Group</a></li>
                       <li class="nav-item"><a  href="{% url 'accounts:logout' %}" class="btn btn-simple">Log out</a></li>
+
     						{% else %}
     						      <li class="nav-item"><a  href="{% url 'groups:all' %}"class="btn btn-simple">Groups</a></li>
     						      <li class="nav-item"><a  href="{% url 'accounts:login' %}" class="btn btn-simple">Log in</a></li>
     						      <li class="nav-item"><a  href="{% url 'accounts:signup' %}" class="btn btn-simple">Sign up</a></li>
     						{% endif %}
+
     					</ul>
+              <form method="GET" class="form-inline" action="{% url 'search' %}">
+            <input class="form-control mr-sm-2" type="text" name="q" placeholder="Search..." aria-label="Search">
+            <button class="btn btn-default btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
             </div>
           </nav>
         </header>

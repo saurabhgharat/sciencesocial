@@ -186,7 +186,40 @@ span.username>a{
 }
 .btn-default{
   background-color: #0dda00;
+  color: white;
+  border: 1px solid white;
 }
 .es{
   padding-top: 100px;
+}
+
+.form-inline{
+  padding-right: 16px;
+}
+.searchresult{
+  padding-top: 40px !important;
+}
+th, td {
+    padding: 15px;
+}
+.su{
+  color: white;
+}
+.su:hover{
+  color: red;
+}
+table {
+  border: 1px solid white;
+  border-collapse: separate !important;
+  border-radius: 8px !important;
+  margin-bottom: 12px;
+}
+.no{
+  font-weight: lighter;
+}
+.sg>a{
+  color: white;
+}
+.sg>a:hover{
+  color: red;
 }
